@@ -1,0 +1,502 @@
+@font-face{
+    font-family:'VnBraggadocio';
+    src:url(/font/VnBraggadocio.ttf);
+    font-style:normal;
+}
+
+@font-face{
+    font-family:'Jaapo';
+    src:url(/font/Jaapo.otf);
+    font-style:normal;
+}
+
+body{
+    margin:0;
+    background-color: white;
+   overflow-y: scroll;
+}
+
+*{
+    border: 0;
+}
+
+
+a{
+	text-decoration: none;
+}
+
+.button{
+	
+	position: relative;
+	overflow:hidden;
+	top: 5%;
+	perspective:400px;
+    text-align: center;
+	background-color: transparent;
+    float: right;
+    width: 9em;
+    margin: 5PX;
+    padding:10px;
+    font-size:15px;
+    border-radius: 1px;
+
+}
+
+
+
+.button div{
+	display: block;
+	position: relative;
+	transition:0.3s ease-in-out all;
+	transform-origin:50% 0;
+  transform-style:preserve-3d;
+	background-color: rgba(121,172,255,0.6);
+	color: white;
+  width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 16px;
+
+}
+.button span{
+	display: block;
+	position: relative;
+	transition:0.3s ease-in-out all;
+	transform-origin:50% 0;
+  transform-style:preserve-3d;
+	background-color: aliceblue;
+	color: black;
+  width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 16px;
+    cursor: pointer;
+
+}
+.button span:after{
+	display: block;
+	content: attr(data-title);
+	position: absolute;
+	left: 0;
+	top: 0;
+	transition:0.3s ease-in-out all;
+	transform-origin:50% 0;
+	transform:translate3d(0px,130%,0px) rotateX(-90deg);
+	background-color: rgba(121,172,255,0.6);
+	color: white;
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 16px;
+}
+
+.button:hover span{
+	transform:translate3d(0px,0px,-30px) rotateX(90deg);
+}
+
+
+h2{
+    margin: 0;
+    font-size: 35px;
+    font-family: Jaapo;
+}
+
+
+h6{
+    margin: 0;
+    margin-top:-40px;
+    font-size: 20px;
+    font-family:sans-serif;
+}
+
+img.resize{
+    width: 100px;
+    height: auto;
+}
+#intro{
+    background-color: white;
+    color:white;
+    width: 1000px;
+    font-weight: bold;
+    font-size: 30px;
+    padding:0;
+	position: -webkit-sticky;
+    position: sticky;
+	top:0;
+    margin-left: auto;
+    margin-right: auto;
+	z-index: 1000000;
+	overflow: hidden;
+}
+
+#portfile{
+    background-color: white;
+    color:black;
+    width: 35%;
+    margin:0;
+    padding-top: 0.5em;
+	padding-left: 1em;
+    display: inline-block;
+
+    
+}
+
+#menu{
+    background-color:WHITE;
+    color:black;
+    width:60%;
+    margin-top: 25px;
+    padding:0px;
+    display: inline-block;
+    float:right;
+	
+}
+
+/*main*/
+
+#main{
+	position: relative;
+	width: 1000px;
+	height: 750px;
+	margin-right: auto;
+	margin-left: auto;
+	
+}
+
+/*cloud*/
+
+#containerCloud{
+  
+    position: relative;
+	display: block;
+    width:40%;
+    left:10%;
+	top:5%;
+    float:left;
+	z-index: 10;
+}
+
+#containerCloud:hover #overlayCloud{
+    opacity: 1;
+}
+
+#containerCloud:hover #img1{
+    opacity: 0;
+}
+
+#overlayCloud{
+    position:relative;
+    height: 100%;
+    width: 100%;
+	text-align: center;
+    opacity:0;
+    transition:  .5s ease;
+    
+}
+
+#containerCloud img{
+	width: 100%;
+	float:left;
+	display: block;
+	
+}
+
+#img1{
+	position: relative;
+ 
+}
+
+#img2{
+    position: absolute;
+
+}
+
+#text{
+    color:grey;
+    font-size: 30px;
+    position: relative;
+    font-family:VnBraggadocio;
+	bottom: 5em;
+    
+}
+
+/* tree */
+
+#containerTree{
+    position: relative;
+    width: 35%;
+    height: auto;
+    float: right;
+	right:10%;
+	z-index: 10;
+	display: block;
+	top:20%;
+   
+}
+
+#containerTree:hover #overlayTree{
+    opacity: 1;
+}
+
+#containerTree:hover #img3{
+    opacity: 0;
+}
+
+
+
+#containerTree img{
+	display: block;
+	float:right;
+	width: 100%;
+}
+
+
+#img3{
+    position: relative;
+   
+}
+
+#img4{
+   
+    position: absolute;
+
+}
+
+#text1{
+    color:grey;
+    font-size: 30px;
+	position: relative;
+    font-family:VnBraggadocio;
+	cursor: pointer;
+	height: 30px;
+	width: 100%;
+	bottom: 7em;
+	
+	
+    
+}
+
+
+#overlayTree{
+    position:relative;
+    height: auto;
+    width: 100%;
+    opacity:0;
+    transition:  .5s ease;
+	text-align: center;
+	
+
+       
+}
+
+/* house*/
+
+#containerHouse{
+    
+    position: relative;
+    width:40%;
+	height: auto;
+    float:left;
+    left: 15%;
+	bottom: 5%;
+	display: block;
+	z-index: 9;
+
+	
+}
+
+#containerHouse:hover #overlayHouse{
+    opacity: 1;
+}
+
+#containerHouse:hover #img5{
+    opacity: 0;
+}
+
+
+#containerHouse img{ 
+    float:left;
+    width: 100%;
+	display: block;
+}
+#img5{
+    position: relative;
+}
+
+#img6{
+    position: absolute;
+}
+
+#text2{
+    color:grey;
+    font-size: 30px;
+    position: relative;
+    text-align: center;
+    font-family:VnBraggadocio;
+    bottom: 7em;
+    
+}
+
+
+#overlayHouse{
+    position:relative;
+    width: 100%;
+    opacity:0;
+    transition:  .5s ease;
+	text-align: center;
+   
+    
+}
+
+/*grass*/
+#containerGrass{
+	position: absolute;
+	width: 100%;
+	height: auto;
+	bottom: 4em;
+	
+}
+
+#containerGrass img{
+	position: relative;
+	width: 100%;
+	display: block;
+	
+}
+
+
+/*footer*/
+
+#footer{
+background-color: black;
+    position: relative;
+    bottom: 0;
+width:100%;
+height: 75px;
+display: block;
+
+}
+
+#Infooter{
+    width: 1000px;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+#icon{
+ width: 50px;
+position: relative;
+ padding: 10px;
+ 
+}
+#iconArrange1{
+    
+    position: relative;
+    color: white;
+    width: auto;
+    height: 75px;
+    display: inline-block;
+    
+}
+
+#iconArrange2{
+    
+    position: relative;
+    color: white;
+    width: 200px;
+    height: 75px;
+    display: inline-block;
+}
+#iconArrange3{
+ position: relative;
+    color: white;
+    width: 200px;
+    height: 75px;
+    display: inline-block;
+}
+
+#iconArrange4{
+    position: relative;
+    color: white;
+    width: 280px;
+    height: 75px;
+    display: inline-block;
+}
+
+#context1{
+    float: right;
+    padding:10px;
+    margin: 0;
+}
+
+#context2{
+    float: right;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 20px;
+    margin: 0;
+}
+#context3{
+    float: right;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 30px;
+    margin: 0;
+}
+#context4{
+    float: right;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 10px;
+    margin: 0;
+}
+
+
+
+@media only screen and (max-width: 1000px) {
+	
+	
+	#intro{
+		width:100%; 
+	}
+	
+	#portfile{
+		width: 30%;
+		
+	}
+	
+	#menu{
+		width: 65%;
+		position: relative;
+		align-content: center;
+		justify-content: center;
+	}
+	
+	.button{
+		width: 14vw;
+		margin: 0.2em;
+    padding:0.5em;
+	}
+	.button span, .button div{
+		font-size: 2vw;
+	}
+	
+	
+	h2{
+		font-size: 4.5vw;
+	}
+	
+	h6{
+		font-size: 2vw;
+	}
+	
+	
+	
+
+}
+
+
+@media screen and (max-width: 400px) {
+	
+	
+}

@@ -1,0 +1,435 @@
+@font-face{
+    font-family:'VnBraggadocio';
+    src:url(/font/VnBraggadocio.ttf);
+    font-style:normal;
+}
+
+@font-face{
+    font-family:'Jaapo';
+    src:url(/font/Jaapo.otf);
+    font-style:normal;
+}
+
+.fontFamily{
+    font-family: VnBraggadocio;
+}
+
+*{
+	margin: 0;
+	padding: 0;
+	border: 0px none;
+}
+body{
+    margin:0;
+    background-color: white;
+	overflow-y: scroll;
+   
+}
+
+
+.button{
+	
+	position: relative;
+	overflow:hidden;
+	top: 5%;
+	perspective:400px;
+    text-align: center;
+	background-color: transparent;
+    float: right;
+    width: 9em;
+    margin: 5PX;
+    padding:10px;
+    font-size:15px;
+    border-radius: 1px;
+
+}
+
+
+
+.button div{
+	display: block;
+	position: relative;
+	transition:0.3s ease-in-out all;
+	transform-origin:50% 0;
+  transform-style:preserve-3d;
+	background-color: rgba(121,172,255,0.6);
+	color: white;
+  width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 16px;
+
+}
+.button span{
+	display: block;
+	position: relative;
+	transition:0.3s ease-in-out all;
+	transform-origin:50% 0;
+  transform-style:preserve-3d;
+	background-color: aliceblue;
+	color: black;
+  width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 16px;
+    cursor: pointer;
+
+}
+.button span:after{
+	display: block;
+	content: attr(data-title);
+	position: absolute;
+	left: 0;
+	top: 0;
+	transition:0.3s ease-in-out all;
+	transform-origin:50% 0;
+	transform:translate3d(0px,130%,0px) rotateX(-90deg);
+	background-color: rgba(121,172,255,0.6);
+	color: white;
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 16px;
+}
+
+.button:hover span{
+	transform:translate3d(0px,0px,-30px) rotateX(90deg);
+}
+
+
+
+h2{
+    margin: 0;
+    font-size: 35px;
+    font-family: Jaapo;
+}
+
+
+h6{
+    margin: 0;
+    margin-top:-40px;
+    font-size: 20px;
+    font-family:sans-serif;
+}
+
+img.resize{
+    width: 100px;
+    height: auto;
+}
+#intro{
+    background-color: white;
+    color:white;
+    width: 1000px;
+    font-weight: bold;
+    font-size: 30px;
+    padding:0;
+	position: -webkit-sticky;
+    position: sticky;
+	top:0;
+    margin-left: auto;
+    margin-right: auto;
+	z-index: 1000000;
+	overflow: hidden;
+}
+
+#portfile{
+    background-color: white;
+    color:black;
+    width: 35%;
+    margin:0;
+    padding-top: 0.5em;
+	padding-left: 1em;
+    display: inline-block;
+
+    
+}
+
+#menu{
+    background-color:WHITE;
+    color:black;
+    width:60%;
+    margin-top: 25px;
+    padding:0px;
+    display: inline-block;
+    float:right;
+	
+}
+
+#main{
+  
+    position: relative;
+    display: block;
+    margin: 0 auto ;
+    width: 1000px;
+    height: auto;
+}
+
+#section1{
+   
+    position: relative;
+    width:100%;
+    height: 380px;
+}
+
+
+#square1{
+    position: relative;
+    background-color: #FCEC8C;
+    width: 70%;
+    height: 250px;
+    bottom:80%;
+    
+    
+}
+
+#text1{
+    position: absolute;
+    font-family: VnBraggadocio;
+    margin-top:-45%;
+    margin-left: 35%;
+    font-size: 65px;
+    text-transform: uppercase;
+    padding-right: 10px;
+}
+#mainPudding{
+    position: relative;
+    width:350px;
+    margin-top:100px;
+    z-index: 1000;
+}
+
+#section2{
+    position: relative;
+    width:100%;
+    height: 490px;
+}
+
+
+.image1{
+    width:200px;
+    position: absolute;
+    top:5%;
+    left: 35%;
+}
+.image2{
+   width:140px;
+    position: absolute;
+    top:45%;
+    left:30%;
+}
+.image3{
+    width:120px;
+    position: absolute;
+    top:62%;
+    left: 10%;
+}
+.image4{
+   width:210px;
+    position: absolute;
+    top:65%;
+    left:50%;
+}
+.image5{
+   width:150px;
+    position: absolute;
+    top:10%;
+    left:53%;
+}
+.image6{
+   width:140px;
+    position: absolute;
+    top:28%;
+    left:13%;
+}
+.image7{
+    width:100px;
+    position: absolute;
+    top:40%;
+    left: 2%;
+}
+.image8{
+   width:110px;
+    position: absolute;
+    top:5%;
+    left:24%;
+}
+.image9{
+   width:130px;
+    position: absolute;
+    top:60%;
+    left: 70%;
+}
+.image10{
+   width:140px;
+    position: absolute;
+    top:27%;
+    left: 66%;
+}
+.image11{
+    width:120px;
+    position: absolute;
+    top:73%;
+    left: 25%;
+}
+.image12{
+    width:120px;
+    position: absolute;
+    top:10%;
+    left:80%;
+}
+.image13{
+    width:110px;
+    position: absolute;
+    top:45%;
+    left:80%;
+}
+.image14{
+    width:100px;
+    position: absolute;
+    top:50%;
+    left:45%;
+}
+
+#section3{
+   
+    position: relative;
+    width:100%;
+    height: 410px;
+}
+
+#square2{
+    position: relative;
+    background-color: #E58B8B;
+    width: 70%;
+    height: 250px;
+    top: 30%;
+    right:-30%;
+    
+    
+}
+
+#text2{
+    position: absolute;
+    font-family: VnBraggadocio;
+    margin-top:-17%;
+    margin-left: 32%;
+    font-size: 65px;
+    text-transform: uppercase;
+    padding-right: 10px;
+}
+#mainSister{
+    position: relative;
+    width:300px;
+    top:0;
+    float: right;
+    z-index: 100;
+}
+
+#section4{
+    
+    position: relative;
+    width:100%;
+    height: 550px;
+}
+
+.image5_1{
+   width:150px;
+    position: absolute;
+    top:10%;
+    left:56%;
+}
+.image10_1{
+   width:110px;
+    position: absolute;
+    top:33%;
+    left: 70%;
+}
+.image13_1{
+    width:140px;
+    position: absolute;
+    top:47%;
+    left:85%;
+}
+#footer{
+background-color: black;
+    position: relative;
+    bottom: 0;
+width:100%;
+height: 75px;
+display: block;
+
+}
+
+#Infooter{
+    width: 1000px;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+#icon{
+ width: 50px;
+position: relative;
+ padding: 10px;
+ 
+}
+#iconArrange1{
+    
+    position: relative;
+    color: white;
+    width: auto;
+    height: 75px;
+    display: inline-block;
+    
+}
+
+#iconArrange2{
+    
+    position: relative;
+    color: white;
+    width: 200px;
+    height: 75px;
+    display: inline-block;
+}
+#iconArrange3{
+ position: relative;
+    color: white;
+    width: 200px;
+    height: 75px;
+    display: inline-block;
+}
+
+#iconArrange4{
+    position: relative;
+    color: white;
+    width: 280px;
+    height: 75px;
+    display: inline-block;
+}
+
+#context1{
+    float: right;
+    padding:10px;
+    margin: 0;
+}
+
+#context2{
+    float: right;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 20px;
+    margin: 0;
+}
+#context3{
+    float: right;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 30px;
+    margin: 0;
+}
+#context4{
+    float: right;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 10px;
+    margin: 0;
+}

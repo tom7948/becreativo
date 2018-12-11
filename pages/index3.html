@@ -1,0 +1,162 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Tom's Studio</title>
+        <meta name="description" content="An interactive getting started guide for Brackets.">
+        <link rel="stylesheet" href="/pages/main3.css">
+        <script src="js/modernizr.custom.js"></script>
+        
+       
+         <title>GOOD IDEA</title>
+    
+</head>
+
+<body>
+   
+     
+    <div id="intro">
+      <div id="portfile">
+            <h2>Po Hung Lin</h2><br>
+            <h6>Interaction & Digital Designer</h6>
+        </div>
+        <div id="menu">
+            
+           <button  class="button"><div>CONTACT</div></button>
+           <a href="/pages/index2.html"><button class="button"><span data-title="PROJECTS">PROJECTS</span></button></a>
+           <a href="/pages/index1.html"><button class="button"><span data-title="ABOUT ME">ABOUT ME</span></button></a>
+          
+            <a href="/index.html"><button class="button ">
+            <span data-title="HOME">HOME</span>
+            </button></a>
+        </div>
+
+
+    </div>
+   
+      
+      <div id="main">
+      	
+      
+       <div id="container">
+           <img src="/IMAGE/board.png" alt="" id="img0">
+           <div id="layover">
+               <img src="/IMAGE/board1.png" alt="" id="img1">
+           </div>
+       </div>
+       
+        <div id="row">
+        
+        <div id="col-75">
+            <input type="text" id="email" placeholder="Email">
+        </div>
+        
+        </div>
+        
+        <div id="row">
+       
+        <div id="col-75">
+            <input type="text" id="name" placeholder="Name">
+        </div>
+        
+        </div>
+        
+        <div id="row">
+        
+        <div id="col-75">
+            <input type="text" id="subject" placeholder="Subject">
+        </div>
+        
+        </div>
+        
+        <div id="row">
+        
+        <div id="col-75">
+            <textarea type="text" id="message" style="height: 200px;" placeholder="What do you want to say..."></textarea>
+        </div>
+        
+        </div>
+        
+    
+        
+        <button class="progress-button" 
+					data-style="rotate-side-down" 
+					data-horizontal data-perspective>Submit</button>
+        
+        </div>
+     
+      
+    
+    
+    <div id="footer">
+      <div id="Infooter">
+       
+         <div id="iconArrange1">
+          <img src="/IMAGE/icon_1.png" alt="" id="icon">
+          <div id="context1">
+           Mail
+           <br>
+           tom7948@yahoo.com.tw
+           </div>
+       </div>
+        
+         <div id="iconArrange2">
+          <img src="/IMAGE/icon_2.png" alt="" id="icon">
+          <div id="context2">
+           Mobile
+           <br>
+           0413648366
+           </div>
+       </div>
+       <div id="iconArrange3">
+            <img src="/IMAGE/icon_3.png" alt="" id="icon">
+          <div id="context3">
+           Follow me
+           <br>
+           tom7948
+           </div>
+       </div>
+       
+        <div id="iconArrange4">
+            <img src="/IMAGE/icon_4.png" alt="" id="icon">
+          <div id="context4">
+           © 2018 by Po-Hung
+           <br>
+           Proudly created by myself
+           </div>
+       </div>
+      
+
+   </div>
+    </div>
+   
+    
+    
+   
+
+
+
+<script src="js/classie.js"></script>
+		<script src="js/progressButton.js"></script>
+		<script>
+			[].slice.call( document.querySelectorAll( 'button.progress-button' ) ).forEach( function( bttn ) {
+				new ProgressButton( bttn, {
+					callback : function( instance ) {
+						var progress = 0,
+							interval = setInterval( function() {
+								progress = Math.min( progress + Math.random() * 0.1, 1 );
+								instance._setProgress( progress );
+
+								if( progress === 1 ) {
+									instance._stop(1);
+									clearInterval( interval );
+								}
+							}, 200 );
+					}
+				} );
+			} );
+		</script>
+</body>
+
+</html>

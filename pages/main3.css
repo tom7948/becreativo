@@ -1,0 +1,504 @@
+@font-face{
+    font-family:'VnBraggadocio';
+    src:url(/font/VnBraggadocio.ttf);
+    font-style:normal;
+}
+@font-face{
+    font-family:'Jaapo';
+    src:url(/font/Jaapo.otf);
+    font-style:normal;
+}
+
+.fontFamily{
+    font-family: VnBraggadocio;
+}
+
+*{
+	margin: 0;
+	padding: 0;
+	border: 0px none;
+}
+
+body{
+    margin:0;
+    background-color: white;
+	overflow-y: scroll;
+	
+   
+}
+
+
+.button{
+	
+	position: relative;
+	overflow:hidden;
+	top: 5%;
+	perspective:400px;
+    text-align: center;
+	background-color: transparent;
+    float: right;
+    width: 9em;
+    margin: 5PX;
+    padding:10px;
+    font-size:15px;
+    border-radius: 1px;
+
+}
+
+
+
+.button div{
+	display: block;
+	position: relative;
+	transition:0.3s ease-in-out all;
+	transform-origin:50% 0;
+  transform-style:preserve-3d;
+	background-color: rgba(121,172,255,0.6);
+	color: white;
+  width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 16px;
+
+}
+.button span{
+	display: block;
+	position: relative;
+	transition:0.3s ease-in-out all;
+	transform-origin:50% 0;
+  transform-style:preserve-3d;
+	background-color: aliceblue;
+	color: black;
+  width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 16px;
+    cursor: pointer;
+
+}
+.button span:after{
+	display: block;
+	content: attr(data-title);
+	position: absolute;
+	left: 0;
+	top: 0;
+	transition:0.3s ease-in-out all;
+	transform-origin:50% 0;
+	transform:translate3d(0px,130%,0px) rotateX(-90deg);
+	background-color: rgba(121,172,255,0.6);
+	color: white;
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 16px;
+}
+
+.button:hover span{
+	transform:translate3d(0px,0px,-30px) rotateX(90deg);
+}
+
+
+
+
+
+h2{
+    margin: 0;
+    font-size: 35px;
+    font-family: Jaapo;
+}
+
+
+h6{
+    margin: 0;
+    margin-top:-40px;
+    font-size: 20px;
+    font-family:sans-serif;
+}
+
+img.resize{
+    width: 100px;
+    height: auto;
+}
+#intro{
+    background-color: white;
+    color:white;
+    width: 1000px;
+    font-weight: bold;
+    font-size: 30px;
+    padding:0;
+	position: -webkit-sticky;
+    position: sticky;
+	top:0;
+    margin-left: auto;
+    margin-right: auto;
+	z-index: 1000000;
+	overflow: hidden;
+}
+
+
+#portfile{
+    background-color: white;
+    color:black;
+    width: 35%;
+    margin:0;
+    padding-top: 0.5em;
+	padding-left: 1em;
+    display: inline-block;
+
+    
+}
+
+#menu{
+    background-color:WHITE;
+    color:black;
+    width:60%;
+    margin-top: 25px;
+    padding:0px;
+    display: inline-block;
+    float:right;
+}
+
+
+#main{
+	position: relative;
+    width:1000px;
+    height:500px;
+    margin-top:10%;
+    margin-bottom: 5%;
+    margin-right: auto;
+    margin-left: auto; 
+   
+  
+}
+
+#row:after {
+    display: table;
+    content: "";
+    clear:both;
+    float: right;
+
+}
+
+
+
+#col-75{
+    float: right;
+    width: 45%;
+    margin-top: 15px;
+    margin-right: 20px;
+    
+}
+
+input[type=text],textarea {
+    background-color: antiquewhite;
+    width: 100%;
+    border-radius: 2px;
+    padding: 10px;
+    border: 0;
+    font-size: 16px;
+    
+    
+}
+input[type=submit]{
+     background-color:rgba(121,172,255,0.3);
+    color: black;
+    
+    width: 20%;
+    border-radius: 2px;
+    
+    
+    
+}
+
+input[type=submit]:hover {
+    background-color:rgba(121,172,255,0.8);
+    color: white;
+}
+
+
+label{
+    display: inline-block;
+    padding: 5px;
+}
+
+placeholder{
+    
+}
+
+
+
+#img0{
+    position: absolute;
+    width: 550px;
+    margin-top:0;
+    margin-left: -60px;
+    
+}
+
+#img1{
+    position: absolute;
+    width: 550px;
+    margin-top:0;
+    margin-left: -60px;
+
+}
+
+#container:hover #img0{
+    opacity: 0;
+}
+
+#container:hover #layover{
+    opacity: 1;
+}
+
+#layover{
+    position: relative;
+    opacity: 0;
+}
+
+
+
+
+#footer{
+background-color: black;
+    position: relative;
+    bottom: 0;
+width:100%;
+height: 75px;
+display: block;
+
+}
+
+#Infooter{
+    width: 1000px;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+#icon{
+ width: 50px;
+position: relative;
+ padding: 10px;
+ 
+}
+#iconArrange1{
+    
+    position: relative;
+    color: white;
+    width: auto;
+    height: 75px;
+    display: inline-block;
+    
+}
+
+#iconArrange2{
+    
+    position: relative;
+    color: white;
+    width: 200px;
+    height: 75px;
+    display: inline-block;
+}
+#iconArrange3{
+ position: relative;
+    color: white;
+    width: 200px;
+    height: 75px;
+    display: inline-block;
+}
+
+#iconArrange4{
+    position: relative;
+    color: white;
+    width: 280px;
+    height: 75px;
+    display: inline-block;
+}
+
+#context1{
+    float: right;
+    padding:10px;
+    margin: 0;
+}
+
+#context2{
+    float: right;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 20px;
+    margin: 0;
+}
+#context3{
+    float: right;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 30px;
+    margin: 0;
+}
+#context4{
+    float: right;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 10px;
+    margin: 0;
+}
+
+
+
+
+
+
+
+
+
+@font-face {
+	font-weight: normal;
+	font-style: normal;
+	font-family: 'icomoon';
+	src:url('/tom_web_portfolio/pages/icomoon/icomoon.eot');
+	src:url('/tom_web_portfolio/pages/icomoon/icomoon.eot?#iefix') format('embedded-opentype'),
+		url('/tom_web_portfolio/pages/icomoon/icomoon.ttf') format('truetype'),
+		url('/tom_web_portfolio/pages/icomoon/icomoon.woff') format('woff'),
+		url('/tom_web_portfolio/pages/icomoon/icomoon.svg#icomoon') format('svg');
+}
+
+/* General styles for all types of buttons */
+.progress-button {
+	display: inline-block;
+    float:right;
+	outline: none;
+	border: none;
+	background: grey;
+	color: white;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-size: 1em;
+	line-height: 2;
+    padding: 10px;
+    font-size:16px;
+    margin-right: 15%;
+    margin-top: 2%;
+    position: relative;
+     cursor: pointer;
+}
+
+.progress-button[disabled],
+.progress-button[disabled].state-loading {
+	cursor: default;
+}
+
+.progress-button .content {
+	position: relative;
+	display: block;
+}
+
+.progress-button .content::before,
+.progress-button .content::after  {
+	position: absolute;
+	right: 10px;
+	color: skyblue;
+	font-family: "icomoon";
+	opacity: 0;
+	-webkit-transition: opacity 0.3s 0.3s;
+	transition: opacity 0.3s 0.3s;
+}
+
+.progress-button .content::before {
+	content: "\e600"; /* Checkmark for success */
+}
+
+.progress-button .content::after {
+	content: "\e601"; /* Cross for error */
+}
+
+.progress-button.state-success .content::before,
+.progress-button.state-error .content::after {
+	opacity: 1;
+}
+
+.notransition {
+	-webkit-transition: none !important;
+	transition: none !important;
+}
+
+.progress-button .progress {
+	background: #FF7664;
+}
+
+.progress-button .progress-inner {
+	position: absolute;
+	left: 0;
+	background: #E84846;
+}
+
+.progress-button[data-horizontal] .progress-inner {
+	top: 0;
+	width: 0;
+	height: 100%;
+	-webkit-transition: width 0.3s, opacity 0.3s;
+	transition: width 0.3s, opacity 0.3s;
+}
+
+.progress-button[data-vertical] .progress-inner {
+	bottom: 0;
+	width: 100%;
+	height: 0;
+	-webkit-transition: height 0.3s, opacity 0.3s;
+	transition: height 0.3s, opacity 0.3s;
+}
+
+/* Necessary 3d styles for buttons with perspective */
+
+.progress-button[data-perspective] {
+	position: relative;
+	display: inline-block;
+	padding: 0;
+	background: transparent;
+	-webkit-perspective: 900px;
+	perspective: 900px;
+}
+
+.progress-button[data-perspective] .content {
+	padding: 20px 40px;
+	background: #FF7664;
+}
+
+.progress-button[data-perspective] .progress-wrap {
+	display: block;
+	-webkit-transition: -webkit-transform 0.2s;
+	transition: transform 0.2s;
+	-webkit-transform-style: preserve-3d;
+	transform-style: preserve-3d;
+}
+
+.progress-button[data-perspective] .content,
+.progress-button[data-perspective] .progress {
+	outline: 1px solid rgba(0,0,0,0); /* Smoothen jagged edges in FF */
+}
+
+/* Individual styles */
+/* Choose the effect(s) you want, delete the rest */
+
+
+/* Rotate side down 3d */
+/* ====================== */
+
+.progress-button[data-style="rotate-side-down"] .progress {
+	position: absolute;
+	top: 100%;
+	left: 0;
+	width: 100%;
+	height: 20px;
+	-webkit-transform: rotateX(-90deg);
+	transform: rotateX(-90deg);
+	-webkit-transform-origin: 50% 0%;
+	transform-origin: 50% 0%;
+	-webkit-backface-visibility: hidden;
+	backface-visibility:hidden;
+}
+
+.progress-button[data-style="rotate-side-down"].state-loading .progress-wrap {
+	-webkit-transform: rotateX(90deg) translateZ(10px);
+	transform: rotateX(90deg) translateZ(10px);
+}
+

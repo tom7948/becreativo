@@ -1,0 +1,601 @@
+@font-face{
+    font-family:'VnBraggadocio';
+    src:url(/font/VnBraggadocio.ttf);
+    font-style:normal;
+}
+
+@font-face{
+    font-family:'Jaapo';
+    src:url(/font/Jaapo.otf);
+    font-style:normal;
+}
+
+.fontFamily{
+    font-family: VnBraggadocio;
+}
+
+*{
+	margin: 0;
+	padding: 0;
+	border: 0px none;
+}
+body{
+    margin:0;
+    background-color: white;
+	overflow-y: scroll;
+   
+}
+
+
+.button{
+	
+	position: relative;
+	overflow:hidden;
+	top: 5%;
+	perspective:400px;
+    text-align: center;
+	background-color: transparent;
+    float: right;
+    width: 9em;
+    margin: 5PX;
+    padding:10px;
+    font-size:15px;
+    border-radius: 1px;
+
+}
+
+
+
+.button div{
+	display: block;
+	position: relative;
+	transition:0.3s ease-in-out all;
+	transform-origin:50% 0;
+  transform-style:preserve-3d;
+	background-color: rgba(121,172,255,0.6);
+	color: white;
+  width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 16px;
+
+}
+.button span{
+	display: block;
+	position: relative;
+	transition:0.3s ease-in-out all;
+	transform-origin:50% 0;
+  transform-style:preserve-3d;
+	background-color: aliceblue;
+	color: black;
+  width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 16px;
+    cursor: pointer;
+
+}
+.button span:after{
+	display: block;
+	content: attr(data-title);
+	position: absolute;
+	left: 0;
+	top: 0;
+	transition:0.3s ease-in-out all;
+	transform-origin:50% 0;
+	transform:translate3d(0px,130%,0px) rotateX(-90deg);
+	background-color: rgba(121,172,255,0.6);
+	color: white;
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 16px;
+}
+
+.button:hover span{
+	transform:translate3d(0px,0px,-30px) rotateX(90deg);
+}
+
+
+
+h2{
+    margin: 0;
+    font-size: 35px;
+    font-family: Jaapo;
+}
+
+
+h6{
+    margin: 0;
+    margin-top:-40px;
+    font-size: 20px;
+    font-family:sans-serif;
+}
+
+img.resize{
+    width: 100px;
+    height: auto;
+}
+#intro{
+    background-color: white;
+    color:white;
+    width: 1000px;
+    font-weight: bold;
+    font-size: 30px;
+    padding:0;
+	position: -webkit-sticky;
+    position: sticky;
+	top:0;
+    margin-left: auto;
+    margin-right: auto;
+	z-index: 1000000;
+	overflow: hidden;
+}
+
+#portfile{
+    background-color: white;
+    color:black;
+    width: 35%;
+    margin:0;
+    padding-top: 0.5em;
+	padding-left: 1em;
+    display: inline-block;
+
+    
+}
+
+#menu{
+    background-color:WHITE;
+    color:black;
+    width:60%;
+    margin-top: 25px;
+    padding:0px;
+    display: inline-block;
+    float:right;
+	
+}
+
+#main{
+    position: relative;
+    width: 1000px;
+    height: auto;
+    margin: 0 auto;
+    
+}
+
+#section1{
+    position: relative;
+    background-color: aquamarine;
+    width: 100%;
+    top:5em;
+	display: inline-flex;
+}
+
+#container1_1{
+    position: relative;
+    background-color: grey;
+    width: 70%;
+    height: auto;
+}
+
+#container1_1 video{
+    position: relative;
+    
+    width: 100%;
+    height: auto;
+}
+
+#container1_2{
+    position: relative;
+    background-color: #94B0FC;
+    width: 30%;
+	height: auto;
+    float: right;
+
+}
+
+#info1{
+
+    height: auto;
+    padding: 10PX;
+    font-size: 15px;
+}
+
+#img1{
+    position: relative;
+    width: 100px;
+    bottom:15px;
+    left:190px;
+    z-index: 1;
+}
+
+#info1_1{ 
+    color: white;
+    font-weight: 900;
+    font-size: 18px;
+    font-family: cursive;
+    position: relative;
+    top:75px;
+    left:50px;
+    margin:6px;
+    z-index: 10;
+}
+
+
+#section2{
+    position: relative;
+    background-color: aquamarine;
+    width: 100%;
+    height: 396px;
+    top:10em;
+	display: inline-flex;
+}
+
+
+
+
+
+#container2_1{
+    position: relative;
+    background-color: #E58B8B;
+    width: 30.5%;
+    height: auto;
+}
+
+
+
+#container2_2{
+    position: relative;
+    background-color: cornflowerblue;
+    width: 70%;
+    height: 100%;
+}
+
+
+
+#info2{
+    height: auto;
+    position: relative;
+    padding:10px;
+    font-size: 15px;
+}
+
+
+#img2{
+    position: relative;
+    width: 150px;
+    bottom:80px;
+    left:170px;
+    z-index: 1;
+}
+
+#info2_1{ 
+    color: white;
+    font-weight: 900;
+    font-size: 18px;
+    font-family: cursive;
+    position: relative;
+    top:25px;
+    left:30px;
+    margin:5px;
+    z-index: 10;
+}
+#section3{
+    position: relative;
+    background-color: aquamarine;
+    top:15em;
+    width: 100%;
+    height: 397px;
+	display: inline-flex;
+   
+}
+
+#container3_1{
+    position: relative;
+    background-color: firebrick;
+    width: 70%;
+    height: 100%;
+}
+
+#container3_2{
+    position: relative;
+    background-color: #FCEC8C;
+    width: 30%;
+    height: 100%;
+    float: right;
+}
+
+#container3_2 img{
+    width: 170px;
+}
+
+#info3_1{ 
+    color:black;
+    font-weight: 900;
+    font-size: 18px;
+    font-family: cursive;
+    position: relative;
+    top:-30px;
+    margin:5px;
+    z-index: 10;
+    text-align: center;
+}
+
+
+video{
+    width: 700px; 
+    height: auto; 
+    position: relative;
+    padding-left: auto; 
+    padding-right: auto;
+}
+#footer{
+background-color: black;
+    position: relative;
+    bottom: -20em;
+width:100%;
+height: 75px;
+display: block;
+
+}
+
+#Infooter{
+    width: 1000px;
+	position: relative;
+    margin-left:auto;
+    margin-right:auto;
+	display: flex;
+	align-content:space-around;
+	justify-content: space-around;
+	flex-direction: row;
+	
+}
+
+#icon{
+ width: 50px;
+position: relative;
+ padding: 10px;
+ 
+}
+#iconArrange1{
+    
+    
+    color: white;
+    width: auto;
+    height: 75px;
+    
+    
+}
+
+#iconArrange2{
+    
+   
+    color: white;
+    width: auto;
+    height: 75px;
+    
+}
+#iconArrange3{
+ position: relative;
+    color: white;
+    width: auto;
+    height: 75px;
+    display: inline-block;
+}
+
+#iconArrange4{
+    position: relative;
+    color: white;
+    width: auto;
+    height: 75px;
+    display: inline-block;
+}
+
+#context1{
+    float: right;
+    padding:10px;
+    margin: 0;
+}
+
+#context2{
+    float: right;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 20px;
+    margin: 0;
+}
+#context3{
+    float: right;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 30px;
+    margin: 0;
+}
+#context4{
+    float: right;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 10px;
+    margin: 0;
+}
+
+
+@media only screen and (max-width: 1000px) {
+	#main{
+		width: 100%;
+	}
+	
+
+	#container1_1{
+		height: auto;
+	}
+	
+	#container1_1 video{
+		 width: 100%;
+	}
+	
+	#container1_2{
+		height: auto;
+	}
+	
+	#info1 {
+		font-size: 1vw;
+	}
+	#info1_1 {
+		font-size: 2vw;
+	}
+	#img1{
+		width: 40%;
+	}
+	#footer{
+		height: 8vw;
+	}
+	#Infooter{
+	
+    width: 100%;
+	margin-left:auto;
+    margin-right:auto;
+		display: flex;
+	align-content:space-around;
+	justify-content: space-around;
+	flex-direction: row;
+}
+	
+	#iconArrange1 div{
+		font-size: 1.5vw;
+		
+	}
+	
+	#iconArrange2 div{
+		font-size: 1.5vw;
+		
+	}
+	
+	#iconArrange3 div{
+		font-size: 1.5vw;
+		
+	}
+	
+	#iconArrange4 div{
+		font-size: 1.5vw;
+		
+	}
+	
+	#context1{
+    float: right;
+    padding:1vw;
+    margin: 0;
+}
+
+	#context2{
+    float: right;
+    padding-top: 1vw;
+    padding-bottom: 1vw;
+    padding-right: 2vw;
+    margin: 0;
+}
+#context3{
+    float: right;
+    padding-top: 1vw;
+    padding-bottom: 1vw;
+    padding-right: 2vw;
+    margin: 0;
+}
+#context4{
+    float: right;
+    padding-top: 1vw;
+    padding-bottom: 1vw;
+    padding-right: 1vw;
+    margin: 0;
+}
+
+	
+	
+	#icon{
+ width: 5vw;
+position: relative;
+ padding: 1vw;
+ 
+}
+
+}
+
+
+
+@media only screen and (max-width: 657px) {
+	
+	
+	#footer{
+		height: 8vw;
+	}
+	#Infooter{
+	
+    width: 100%;
+		height: auto;
+	margin-left:auto;
+    margin-right:auto;
+		display: flex;
+	align-content:space-between;
+	justify-content: space-between;
+	flex-direction: row;
+}
+
+	
+	#iconArrange1 div{
+		font-size: 1vw;
+		
+	}
+	
+	#iconArrange2 div{
+		font-size: 1vw;
+		
+	}
+	
+	#iconArrange3 div{
+		font-size: 1vw;
+		
+	}
+	
+	#iconArrange4 div{
+		font-size: 1vw;
+		
+	}
+	
+	#context1{
+    float: right;
+    padding:0vw;
+    margin: 0.5vw;
+}
+
+	#context2{
+    float: right;
+    padding-top: 0.5vw;
+    padding-bottom: 0.5vw;
+    padding-right: 0vw;
+    margin: 0;
+}
+#context3{
+    float: right;
+    padding-top: 0.5vw;
+    padding-bottom: 0.5vw;
+    padding-right: 0vw;
+    margin: 0;
+}
+#context4{
+    float: right;
+    padding-top: 0.5vw;
+    padding-bottom: 0.5vw;
+    padding-right: 0;
+    margin: 0;
+}
+
+	
+	
+	#icon{
+ width: 5vw;
+position: relative;
+ padding: 0.5vw;
+ 
+}
+
+}

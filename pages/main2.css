@@ -1,0 +1,548 @@
+@font-face{
+    font-family:'VnBraggadocio';
+    src:url(/font/VnBraggadocio.ttf);
+    font-style:normal;
+}
+
+@font-face{
+    font-family:'Jaapo';
+    src:url(/font/Jaapo.otf);
+    font-style:normal;
+}
+
+.fontFamily{
+    font-family: VnBraggadocio;
+}
+
+body{
+    margin:0;
+    background-color: white;
+	overflow-y: scroll;
+
+}
+
+*{
+    border: 0;
+}
+
+.button{
+	
+	position: relative;
+	overflow:hidden;
+	top: 5%;
+	perspective:400px;
+    text-align: center;
+	background-color: transparent;
+    float: right;
+    width: 9em;
+    margin: 5PX;
+    padding:10px;
+    font-size:15px;
+    border-radius: 1px;
+
+}
+
+
+
+.button div{
+	display: block;
+	position: relative;
+	transition:0.3s ease-in-out all;
+	transform-origin:50% 0;
+  transform-style:preserve-3d;
+	background-color: rgba(121,172,255,0.6);
+	color: white;
+  width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 16px;
+
+}
+.button span{
+	display: block;
+	position: relative;
+	transition:0.3s ease-in-out all;
+	transform-origin:50% 0;
+  transform-style:preserve-3d;
+	background-color: aliceblue;
+	color: black;
+  width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 16px;
+    cursor: pointer;
+
+}
+.button span:after{
+	display: block;
+	content: attr(data-title);
+	position: absolute;
+	left: 0;
+	top: 0;
+	transition:0.3s ease-in-out all;
+	transform-origin:50% 0;
+	transform:translate3d(0px,130%,0px) rotateX(-90deg);
+	background-color: rgba(121,172,255,0.6);
+	color: white;
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 16px;
+}
+
+.button:hover span{
+	transform:translate3d(0px,0px,-30px) rotateX(90deg);
+}
+
+
+
+
+
+h2{
+    margin: 0;
+    font-size: 35px;
+    font-family: Jaapo;
+}
+
+
+h6{
+    margin: 0;
+    margin-top:-40px;
+    font-size: 20px;
+    font-family:sans-serif;
+}
+
+img.resize{
+    width: 100px;
+    height: auto;
+}
+#intro{
+    background-color: white;
+    color:white;
+    width: 1000px;
+    font-weight: bold;
+    font-size: 30px;
+    padding:0;
+    margin-left: auto;
+    margin-right: auto;
+    position: -webkit-sticky;
+    position: sticky;
+    top:0;
+	height: auto;
+    z-index: 1000000;
+	overflow: hidden;
+   
+}
+#portfile{
+    background-color: white;
+    color:black;
+    width: 35%;
+    margin:0;
+     padding-top: 0.5em;
+	padding-left: 1em;
+    display: inline-block;
+    
+}
+
+#menu{
+    color:black;
+    width:600px;
+    margin-top: 25px;
+    padding:0px;
+    display: inline-block;
+    float:right;
+}
+
+#main{
+	
+    width:1000px;
+    height: 1050px;
+    margin-right: auto;
+    margin-left: auto;  
+	overflow: hidden;
+   
+  
+}
+#container1{
+
+    width: 500px;
+    height: auto;
+    text-align: center;
+    font-size: 30px;
+    position: relative;
+    margin-top: 40px;
+    display: inline-block;
+}
+#container2{
+
+    width: 500px;
+    height: auto;
+    text-align: center;
+    font-size: 30px;
+    margin-top: 0;
+    position: relative;
+    margin-top: 40px;
+    display: inline-block;
+    float: right;
+}
+
+#container3{
+
+    width: 500px;
+    height: auto;
+    text-align: center;
+    font-size: 30px;
+    position: relative;
+    margin-top: 40px;
+    display: inline-block;
+    
+}
+#container4{
+ 
+    width: 500px;
+    height: auto;
+    text-align: center;
+    font-size: 30px;
+    position: relative;
+    margin-top: 40px;
+    display: inline-block;
+    float: right;
+    
+}
+
+#img1{
+    position: relative;
+    width: 400px;
+    margin-right: auto;
+    margin-left: auto;
+   
+}
+
+#img2{
+    position: relative;
+    width: 400px;
+    margin-top:-10px;   
+}
+
+#overlayProject1{
+    
+    width: 400px;
+    height: auto;
+    display: block;
+    position: relative;
+    opacity: 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top:-400px;
+    transition: .5s ease;
+}
+
+#container1:hover #img1{
+    opacity: 0;
+}
+#container1:hover #overlayProject1{
+    opacity: 1;
+}
+
+#container1:hover #line{
+    -webkit-animation: move 1s ease;
+    animation: move 1s ease;
+    left: 50%; 
+    bottom: 0;
+}
+
+#container1:hover #circle{
+     -webkit-animation: show .6s ease 0.8s;
+    animation: show .6s ease 0.8s;
+    animation-fill-mode:forwards;
+       
+}
+
+#container1:hover #text{
+    -webkit-animation: appear 1s ease .9s;
+    animation: appear 1s ease .9s;
+    animation-fill-mode:forwards;
+}
+
+
+@keyframes appear{
+    0% {color:transparent;}
+    100% {color: white;}
+}
+@-webkit-keyframes appear{
+    0% {color:transparent;}
+    100% {color: white;}
+}
+
+#mask{
+    background-color: gray;
+    width: 400px;
+    height: 380px;
+    display: block;
+    position: relative;
+    margin-bottom: 10px;
+    margin-top:-410px;
+    padding-bottom: 20px;
+    opacity: 0.8;
+}
+
+#text{
+    color: transparent;
+    font-size: 16px;
+    width: 280px;
+    position: absolute;
+    left:15%;
+    top:30%;
+    cursor: pointer;
+     -webkit-transform:translate(40%, 40%);
+    -ms-transform:translate(40%, 40%);
+    transform: translate(0%, 0%);  
+}
+
+#line{
+    background-color: white;
+    width: 2px;
+    position: absolute;
+    height: 100px;
+    left:50%;
+    bottom:-26%;   
+}
+
+@keyframes move {
+    0% {left: 50%; bottom: -25%;}
+    100% {left: 50%; bottom: 0;}
+}
+
+@-webkit-keyframes move {
+    0%{left: 50%; bottom: -25%;}
+    100%{left: 50%; bottom: 0;}
+}
+
+#circle{
+    background-color: transparent;
+    width:15px;
+    height: 15px;
+    position: absolute;
+    left:48.5%;
+    bottom: 25%;
+    opacity: 1;
+}
+
+@keyframes show {
+     0%{background-color: transparent;}
+    100%{background-color: white;}
+}
+
+@-webkit-keyframes show {
+    0%{background-color: transparent;}
+    100%{background-color: white;}
+}
+
+
+#overlayProject2{
+    
+    width: 400px;
+    height: auto;
+    display: block;
+    position: relative;
+    opacity: 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top:-400px;
+    transition: .5s ease;
+}
+
+#container2:hover #img1{
+    opacity: 0;
+}
+#container2:hover #overlayProject2{
+    opacity: 1;
+}
+
+#container2:hover #line{
+    -webkit-animation: move 1s ease;
+    animation: move 1s ease;
+    left: 50%; 
+    bottom: 0;
+}
+
+#container2:hover #circle{
+    -webkit-animation: show .6s ease 0.8s;
+    animation: show .6s ease 0.8s;
+    animation-fill-mode:forwards;
+       
+}
+
+#container2:hover #text{
+    -webkit-animation: appear 1s ease .9s;
+    animation: appear 1s ease .9s;
+    animation-fill-mode:forwards;
+}
+
+
+#overlayProject3{
+    
+    width: 400px;
+    height: auto;
+    display: block;
+    position: relative;
+    opacity: 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top:-400px;
+    transition: .5s ease;
+}
+
+#container3:hover #img1{
+    opacity: 0;
+}
+#container3:hover #overlayProject3{
+    opacity: 1;
+}
+
+#container3:hover #line{
+    -webkit-animation: move 1s ease;
+    animation: move 1s ease;
+    left: 50%; 
+    bottom: 0;
+}
+
+#container3:hover #circle{
+    -webkit-animation: show .6s ease 0.8s;
+    animation: show .6s ease 0.8s;
+    animation-fill-mode:forwards;
+       
+}
+#container3:hover #text{
+    -webkit-animation: appear 1s ease .9s;
+    animation: appear 1s ease .9s;
+    animation-fill-mode:forwards;
+}
+
+
+#overlayProject4{
+    
+    width: 400px;
+    height: auto;
+    display: block;
+    position: relative;
+    opacity: 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top:-400px;
+    transition: .5s ease;
+}
+
+#container4:hover #img1{
+    opacity: 0;
+}
+#container4:hover #overlayProject4{
+    opacity: 1;
+}
+
+#container4:hover #line{
+    -webkit-animation: move 1s ease;
+    animation: move 1s ease;
+    left: 50%; 
+    bottom: 0;
+}
+
+#container4:hover #circle{
+     -webkit-animation: show .6s ease 0.8s;
+    animation: show .6s ease 0.8s;
+    animation-fill-mode:forwards;
+       
+}
+#container4:hover #text{
+    -webkit-animation: appear 1s ease .9s;
+    animation: appear 1s ease .9s;
+    animation-fill-mode:forwards;
+}
+
+
+
+
+
+#footer{
+background-color: black;
+    position: relative;
+    bottom: 0;
+width:100%;
+height: 75px;
+display: block;
+
+}
+
+#Infooter{
+    width: 1000px;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+#icon{
+ width: 50px;
+position: relative;
+ padding: 10px;
+ 
+}
+#iconArrange1{
+    
+    position: relative;
+    color: white;
+    width: auto;
+    height: 75px;
+    display: inline-block;
+    
+}
+
+#iconArrange2{
+    
+    position: relative;
+    color: white;
+    width: 200px;
+    height: 75px;
+    display: inline-block;
+}
+#iconArrange3{
+ position: relative;
+    color: white;
+    width: 200px;
+    height: 75px;
+    display: inline-block;
+}
+
+#iconArrange4{
+    position: relative;
+    color: white;
+    width: 280px;
+    height: 75px;
+    display: inline-block;
+}
+
+#context1{
+    float: right;
+    padding:10px;
+    margin: 0;
+}
+
+#context2{
+    float: right;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 20px;
+    margin: 0;
+}
+#context3{
+    float: right;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 30px;
+    margin: 0;
+}
+#context4{
+    float: right;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 10px;
+    margin: 0;
+}

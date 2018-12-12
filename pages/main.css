@@ -1,12 +1,12 @@
 @font-face{
     font-family:'VnBraggadocio';
-    src:url(/font/VnBraggadocio.ttf);
+    src:url(./font/VnBraggadocio.ttf);
     font-style:normal;
 }
 
 @font-face{
     font-family:'Jaapo';
-    src:url(/font/Jaapo.otf);
+    src:url(./font/Jaapo.otf);
     font-style:normal;
 }
 

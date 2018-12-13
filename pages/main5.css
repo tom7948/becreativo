@@ -940,14 +940,13 @@ img.resize{
 	z-index: 10;
 }
 
-#content6 video{
+#content6 iframe{
     position: absolute;
-    top:12%;
-	left:30px;
-	height: auto; 
-	width: 270px;
+    top:12.5%;
+	left:3.5%;
 	z-index: 100;
 }
+
 
 #p4_rec5{
     position: relative;

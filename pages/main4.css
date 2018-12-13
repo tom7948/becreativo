@@ -1,12 +1,12 @@
 @font-face{
     font-family:'VnBraggadocio';
-    src:url(./font/VnBraggadocio.ttf);
+    src:url(../font/VnBraggadocio.ttf);
     font-style:normal;
 }
 
 @font-face{
     font-family:'Jaapo';
-    src:url(./font/Jaapo.otf);
+    src:url(../font/Jaapo.otf);
     font-style:normal;
 }
 
@@ -541,7 +541,7 @@ img.resize{
 	position: relative;
 	width: 800px;
 	height: auto;
-	top:6em;
+	top:10em;
 	margin-left: auto;
 	margin-right: auto;
 }

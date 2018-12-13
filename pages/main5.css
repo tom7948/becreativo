@@ -227,6 +227,7 @@ img.resize{
     margin-right: auto;
 	z-index: 1000000;
 	overflow: hidden;
+	
 }
 
 #portfile{
@@ -237,6 +238,7 @@ img.resize{
     padding-top: 0.5em;
 	padding-left: 1em;
     display: inline-block;
+    cursor:default;
 
     
 }

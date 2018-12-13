@@ -355,11 +355,11 @@ position: relative;
 	font-weight: normal;
 	font-style: normal;
 	font-family: 'icomoon';
-	src:url('/tom_web_portfolio/pages/icomoon/icomoon.eot');
-	src:url('/tom_web_portfolio/pages/icomoon/icomoon.eot?#iefix') format('embedded-opentype'),
-		url('/tom_web_portfolio/pages/icomoon/icomoon.ttf') format('truetype'),
-		url('/tom_web_portfolio/pages/icomoon/icomoon.woff') format('woff'),
-		url('/tom_web_portfolio/pages/icomoon/icomoon.svg#icomoon') format('svg');
+	src:url('./icomoon/icomoon.eot');
+	src:url('./icomoon/icomoon.eot?#iefix') format('embedded-opentype'),
+		url('./icomoon/icomoon.ttf') format('truetype'),
+		url('./icomoon/icomoon.woff') format('woff'),
+		url('./icomoon/icomoon.svg#icomoon') format('svg');
 }
 
 /* General styles for all types of buttons */
@@ -501,4 +501,5 @@ position: relative;
 	-webkit-transform: rotateX(90deg) translateZ(10px);
 	transform: rotateX(90deg) translateZ(10px);
 }
+
 

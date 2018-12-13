@@ -175,12 +175,11 @@ img.resize{
     position: relative;
     background-color: grey;
     width: 70%;
-    height: auto;
+    height: 396px;
 }
 
 #container1_1 video{
     position: relative;
-    
     width: 100%;
     height: auto;
 }
@@ -197,14 +196,14 @@ img.resize{
 #info1{
 
     height: auto;
-    padding: 10PX;
+    padding: 5PX;
     font-size: 15px;
 }
 
 #img1{
     position: relative;
     width: 100px;
-    bottom:15px;
+    bottom:0px;
     left:190px;
     z-index: 1;
 }
